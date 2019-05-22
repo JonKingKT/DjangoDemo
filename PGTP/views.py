@@ -27,11 +27,12 @@ def loginuser(request):
     password = request.POST.get('password', '')
     try:
         # user = UserInfo.objects.filter(account=username)
+        ItemList = ItemsInfo.objects.all()
         myuser = UserInfo.objects.get(account=username)
         # user1=user[2]
         if myuser.password==password:
 
-            return HttpResponseRedirect("/show")
+            return render(request,"login/show.html",{"items":ItemList})
 
         else:
             return HttpResponse('密码错误')
