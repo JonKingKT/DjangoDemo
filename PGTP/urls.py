@@ -9,8 +9,11 @@ urlpatterns = [
     path('loginuser', views.loginuser , name='loginuser'),
     path('regiterUser',views.regiterUser,name='regiterUser'),
     path('info', views.infoHTML),
-    path('putIn',views.putIn,name='putIn'),
-    path('regiter',views.regiterHTML)
+    # path('putIn',views.putIn,name='putIn'),
+    path('regiter',views.regiterHTML),
+    path('addItem',views.addItemHTML),
+    path('gitUp',views.gitUp,name='gitUp'),
+    path('show',views.showHTML)
 
 ]
 

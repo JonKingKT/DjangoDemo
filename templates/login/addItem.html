@@ -35,33 +35,24 @@
             <h1>Login</h1>
             <div class="alert-close"></div>
         </div>
-        <form action="{%url 'regiterUser'%}" method="POST">
+        <form action="{%url 'gitUp'%}" method="POST">
         {% csrf_token %}
         <li>
-            <input type="text" class="text" value="账户名" name="username" onfocus="this.value = '';"
-                   onblur="if (this.value == '') {this.value = 'Username';}"><a href="#" class=" icon user"></a>
+            <input type="text" class="text" value="物品名称" name="itmname" onfocus="this.value = '';"
+                   onblur="if (this.value == '') {this.value = 'ItemName';}"><a href="#" class=" icon user"></a>
         </li>
         <div class="clear"></div>
         <li>
-            <input type="text" class="text" value="用户名" name="name" onfocus="this.value = '';"
-                   onblur="if (this.value == '') {this.value = 'Name';}"><a href="#" class=" icon user"></a>
+            <input type="text" class="text" value="价格" name="cost" onfocus="this.value = '';"
+                   onblur="if (this.value == '') {this.value = 'Cost';}"><a href="#" class=" icon user"></a>
         </li>
         <div class="clear"></div>
         <li>
-            <input type="text" class="text" value="电子邮件" name="email" onfocus="this.value = '';"
-                   onblur="if (this.value == '') {this.value = 'Email';}"><a href="#" class=" icon user"></a>
+            <input type="text" class="text" value="描述" name="describe" onfocus="this.value = '';"
+                   onblur="if (this.value == '') {this.value = 'Describe';}"><a href="#" class=" icon user"></a>
         </li>
         <div class="clear"></div>
-        <li>
-            <input type="text" class="text" value="支付账户名" name="payname" onfocus="this.value = '';"
-                   onblur="if (this.value == '') {this.value = 'Payname';}"><a href="#" class=" icon user"></a>
-        </li>
-        <div class="clear"></div>
-        <li>
-            <input type="password" value="密码" name="password" onfocus="this.value = '';"
-                   onblur="if (this.value == '') {this.value = 'Password';}"> <a href="#" class="icon lock"></a>
-        </li>
-        <div class="clear"></div>
+
         <div class="submit">
             <input type="submit" onclick="myFunction()" value="提 交">
             <div class="clear"></div>
