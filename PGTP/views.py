@@ -26,7 +26,6 @@ def loginuser(request):
     username=request.POST.get('username','')
     password = request.POST.get('password', '')
     try:
-        # user = UserInfo.objects.filter(account=username)
         ItemList = ItemsInfo.objects.all()
         myuser = UserInfo.objects.get(account=username)
         # user1=user[2]
@@ -79,23 +78,4 @@ def gitUp(request):
         item.iName = itmname
         item.save()
         return HttpResponse('物品上传成功')
-
-# def putIn(request):
-#     sname=request.POST.get('sname','')
-#     age=request.POST.get('age','')
-#     school=request.POST.get('school','')
-#     schoolID=request.POST.get('schoolID','')
-#     studentID=request.POST.get('studentID','')
-#     email=request.POST.get('email','')
-#     phone=request.POST.get('phone','')
-#     stu1=UserInfo()
-#     stu1.sname=sname
-#     stu1.age = age
-#     stu1.school = school
-#     stu1.schoolID =  schoolID
-#     stu1.studentID = studentID
-#     stu1.email = email
-#     stu1.phone = phone
-#     stu1.save()
-#     return HttpResponse('报名成功')
 

@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class Cet46Config(AppConfig):
+class PGTPConfig(AppConfig):
     name = 'PGTP'
